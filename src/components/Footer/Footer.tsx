@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function FooterComp() {
     return (
-        <div className="p-6">
-            <footer className="bg-white/30 backdrop-blur-lg border border-gray-200/30 py-8 mt-16 rounded-xl shadow-lg">
+        <div className="p-6 mt-auto">
+            <footer className="bg-white/30 backdrop-blur-lg border border-gray-200/30 py-8 rounded-xl shadow-lg">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                         {/* Logo and Copyright */}

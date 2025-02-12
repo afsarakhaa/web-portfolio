@@ -19,9 +19,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/image/afsar_logo.png" />
       </head>
-      <body className="bg-gradient-to-r from-green-100 to-blue-100">
+      <body className="bg-gradient-to-r from-green-100 to-blue-100 flex flex-col min-h-screen">
         <HeaderComp />
-        <main>{children}</main>
+        <main className="flex flex-grow justify-center items-center">{children}</main>
         <FooterComp/>
       </body>
     </html>
