@@ -2,43 +2,77 @@
 
 import { FiMessageCircle } from "react-icons/fi";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import HeaderMobile from "./HeaderMobile"
+import Link from "next/link";
 
 export default function HeaderComp() {
+    const pathname = usePathname();
+
     return (
         <nav>
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
                     {/* Logo */}
                     <div className="flex-shrink-0">
-                        <a href="/" className="flex items-center text-gray-700">
+                        <Link href="/" className="flex items-center text-gray-700">
                             <Image src={'/image/afsar_logo.png'} alt="Afsar's Logo" width={48} height={48} />
                             <span className="font-bold ml-2">Afsar Rakha</span>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Primary Nav */}
                     <div className="hidden md:flex space-x-6 font-bold">
-                        <a href="/" className="text-gray-700 hover:text-green-600 transition duration-300 hover:bg-green-200 rounded-xl py-2 px-3">
+                        <Link
+                            href="/"
+                            className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/"
+                                    ? "bg-green-600 text-white"
+                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                }`}
+                        >
                             Home
-                        </a>
-                        <a href="/projects" className="text-gray-700 hover:text-green-600 transition duration-300 hover:bg-green-200 rounded-xl py-2 px-3">
-                            Projects
-                        </a>
-                        <a href="/contact" className="text-gray-700 hover:text-green-600 transition duration-300 hover:bg-green-200 rounded-xl py-2 px-3">
+                        </Link>
+                        <Link
+                            href="/studycase"
+                            className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/studycase"
+                                    ? "bg-green-600 text-white"
+                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                }`}
+                        >
                             Study Case
-                        </a>
-                        <a href="/about" className="text-gray-700 hover:text-green-600 transition duration-300 hover:bg-green-200 rounded-xl py-2 px-3">
+                        </Link>
+                        <Link
+                            href="/projects"
+                            className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/projects"
+                                    ? "bg-green-600 text-white"
+                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                }`}
+                        >
+                            Projects
+                        </Link>
+                        <Link
+                            href="/about"
+                            className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/about"
+                                    ? "bg-green-600 text-white"
+                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                }`}
+                        >
                             About
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Contact Button */}
                     <div className="hidden md:block">
-                        <a href="/contact" className="flex items-center py-2 px-4 bg-green-600 text-white font-bold rounded-xl hover:bg-green-700 transition duration-300">
+                        <Link
+                            href="/contact"
+                            className={`flex items-center py-2 px-4 font-bold rounded-xl transition duration-300 ${pathname === "/contact"
+                                    ? "bg-green-800 text-white" 
+                                    : "bg-green-600 text-white hover:bg-green-700"
+                                }`}
+                        >
                             <FiMessageCircle className='w-6 h-6' />
                             <span className='ml-2'>Contact</span>
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Mobile menu button */}
