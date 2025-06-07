@@ -18,12 +18,12 @@ export default function PageHeader({ title, subtitle, icon, className = "" }: Pa
             transition={{ duration: 0.8 }}
             className={`text-center mb-16 ${className}`}
         >
-            <h1 className="text-5xl font-extrabold text-green-600 mb-4 flex items-center justify-center">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl font-extrabold text-green-600 mb-4 flex items-center justify-center">
                 {icon && <span className="mr-4">{icon}</span>}
                 {title}
                 {icon && <span className="ml-4">{icon}</span>}
             </h1>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">{subtitle}</p>
+            <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">{subtitle}</p>
         </motion.div>
     )
 }
