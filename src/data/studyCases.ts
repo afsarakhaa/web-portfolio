@@ -17,16 +17,16 @@ export const studyCases: StudyCase[] = [
     },
     {
         id: 2,
-        title: "Makan Selamanya 🍔🔁",
+        title: "Tarik Ulur dulu ga si 👻",
         question:
-            "Bayangin kalian cuma boleh makan satu jenis makanan sampe pensiun. Kalian lebih pilih mana?",
+            "Lagi deket, udah chattan tiap hari, udah callan, eh tiba-tiba ilang kayak ditelan bumi. Kalau dia balik lagi dan minta maaf, kalian...?",
         options: [
-            { text: "Nasi Uduk lah", votes: 98, emoji: "🍲" },
-            { text: "Nasi Padang supremasi", votes: 201, emoji: "🍛" },
+            { text: "Kasih kesempatan kedua", votes: 145, emoji: "🤷‍♀️" },
+            { text: "SEKIPPP, ENAK AJA ", votes: 211, emoji: "🚫" },
         ],
-        category: "Food",
-        totalVotes: 299,
-        comments: 43,
+        category: "Love life",
+        totalVotes: 356,
+        comments: 66,
         trending: true,
     },
     {
@@ -104,17 +104,17 @@ export const studyCases: StudyCase[] = [
     },
     {
         id: 8,
-        title: "Tarik Ulur dulu ga si 👻",
+        title: "Makan Selamanya 🍔🔁",
         question:
-            "Lagi deket, udah chattan tiap hari, udah callan, eh tiba-tiba ilang kayak ditelan bumi. Kalau dia balik lagi dan minta maaf, kalian...?",
+            "Bayangin kalian cuma boleh makan satu jenis makanan sampe pensiun. Kalian lebih pilih mana?",
         options: [
-            { text: "Kasih kesempatan kedua", votes: 145, emoji: "🤷‍♀️" },
-            { text: "SEKIPPP, ENAK AJA ", votes: 211, emoji: "🚫" },
+            { text: "Nasi Uduk lah", votes: 98, emoji: "🍲" },
+            { text: "Nasi Padang supremasi", votes: 201, emoji: "🍛" },
         ],
-        category: "Love life",
-        totalVotes: 356,
-        comments: 66,
-        trending: true,
+        category: "Food",
+        totalVotes: 299,
+        comments: 43,
+        trending: false,
     },
     {
         id: 9,
