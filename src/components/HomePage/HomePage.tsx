@@ -42,7 +42,7 @@ export default function HomePage() {
                 </div>
 
                 <a href="/about" className='flex items-center text-white bg-green-600 hover:bg-green-700 font-bold py-2 px-4 rounded-xl transition duration-300 shadow-lg transform hover:scale-110'>
-                    About Me! 🐸
+                    About Me
                     <FiArrowRight className='ml-2 w-6 h-6' />
                 </a>
             </div>
