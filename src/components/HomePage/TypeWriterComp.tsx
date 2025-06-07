@@ -7,8 +7,7 @@ export default function TypeWriterComp() {
     const [roles] = useState([
         "an IS student @ University of Indonesia",
         "a Web Dev & UX Design Enthusiast",
-        "a Professional Yapper 😎",
-        "someone who loves creating digital magic ✨",
+        "a Professional Yapper :')",
     ])
 
     return (
