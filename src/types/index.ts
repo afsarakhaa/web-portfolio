@@ -6,7 +6,6 @@ export interface Project {
     technologies: string[]
     github: string
     demo: string
-    featured: boolean
 }
 
 export interface StudyCase {

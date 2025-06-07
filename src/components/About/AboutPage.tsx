@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion"
 import { FiHeart, FiMail, FiCode } from "react-icons/fi"
-import { GiFrog } from "react-icons/gi"
 import PageHeader from "@/components/ui/PageHeader"
 import GlassCard from "@/components/ui/GlassCard"
 import ProfileCard from "./ProfileCard"
@@ -15,7 +14,7 @@ export default function AboutPage() {
     return (
         <section className="min-h-screen py-16">
             <div className="max-w-6xl mx-auto px-4">
-                <PageHeader title="About Me" subtitle="" icon={<GiFrog className="text-green-500" />} />
+                <PageHeader title="About Me" subtitle="" />
 
                 {/* Main Content */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
