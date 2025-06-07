@@ -16,7 +16,7 @@ export default function ProfileCard() {
                     className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-green-400 shadow-lg"
                 >
                     <img
-                        src="image/afsar.png"
+                        src="image/afsar_photo.png"
                         alt="Afsar Rakha Farrasandi"
                         className="w-full h-full object-cover"
                     />
