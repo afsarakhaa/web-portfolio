@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FiMessageCircle, FiUsers, FiHeart, FiTrendingUp } from "react-icons/fi"
+import { FiUsers, FiHeart, FiTrendingUp } from "react-icons/fi"
 import type { StudyCase } from "@/types"
 
 interface StudyCaseCardProps {

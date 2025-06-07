@@ -1,3 +1,5 @@
+import { IconType } from "react-icons"
+
 export interface Project {
     id: number
     title: string
@@ -39,7 +41,7 @@ export interface Interest {
 
 export interface SocialLink {
     name: string
-    icon: any
+    icon: IconType
     url: string
     color: string
     bgColor: string
@@ -47,7 +49,7 @@ export interface SocialLink {
 }
 
 export interface ContactInfo {
-    icon: any
+    icon: IconType
     title: string
     info: string
     description: string

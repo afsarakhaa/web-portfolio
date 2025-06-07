@@ -1,6 +1,6 @@
 import type { SocialLink, ContactInfo } from "@/types"
 import { FiMapPin, FiMail, FiClock } from "react-icons/fi"
-import { FaGithub, FaLinkedin, FaInstagram, FaDiscord, } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaInstagram, FaDiscord} from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 
 export const socialLinks: SocialLink[] = [

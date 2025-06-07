@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FiCode, FiStar } from "react-icons/fi"
+import { FiCode } from "react-icons/fi"
 import { useState } from "react"
 import PageHeader from "@/components/ui/PageHeader"
 import GlassCard from "@/components/ui/GlassCard"
