@@ -26,8 +26,8 @@ export default function HeaderComp() {
                         <Link
                             href="/"
                             className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/"
-                                    ? "bg-green-600 text-white"
-                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                ? "bg-green-600 text-white"
+                                : "text-gray-700 hover:text-green-600 hover:bg-green-200"
                                 }`}
                         >
                             Home
@@ -35,8 +35,8 @@ export default function HeaderComp() {
                         <Link
                             href="/studycase"
                             className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/studycase"
-                                    ? "bg-green-600 text-white"
-                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                ? "bg-green-600 text-white"
+                                : "text-gray-700 hover:text-green-600 hover:bg-green-200"
                                 }`}
                         >
                             Study Case
@@ -44,8 +44,8 @@ export default function HeaderComp() {
                         <Link
                             href="/projects"
                             className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/projects"
-                                    ? "bg-green-600 text-white"
-                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                ? "bg-green-600 text-white"
+                                : "text-gray-700 hover:text-green-600 hover:bg-green-200"
                                 }`}
                         >
                             Projects
@@ -53,8 +53,8 @@ export default function HeaderComp() {
                         <Link
                             href="/about"
                             className={`py-2 px-3 rounded-xl transition duration-300 ${pathname === "/about"
-                                    ? "bg-green-600 text-white"
-                                    : "text-gray-700 hover:text-green-600 hover:bg-green-200"
+                                ? "bg-green-600 text-white"
+                                : "text-gray-700 hover:text-green-600 hover:bg-green-200"
                                 }`}
                         >
                             About
@@ -66,8 +66,8 @@ export default function HeaderComp() {
                         <Link
                             href="/contact"
                             className={`flex items-center py-2 px-4 font-bold rounded-xl transition duration-300 ${pathname === "/contact"
-                                    ? "bg-green-800 text-white" 
-                                    : "bg-green-600 text-white hover:bg-green-700"
+                                ? "bg-green-800 text-white"
+                                : "bg-green-600 text-white hover:bg-green-700"
                                 }`}
                         >
                             <FiMessageCircle className='w-6 h-6' />
@@ -76,7 +76,7 @@ export default function HeaderComp() {
                     </div>
 
                     {/* Mobile menu button */}
-                    <div className="md:hidden pt-2 pb-1 px-2 border border-gray-200 rounded-xl shadow mr-2">
+                    <div className="relative md:hidden pt-2 pb-1 px-2 border border-gray-200 rounded-xl shadow mr-2">
                         <HeaderMobile />
                     </div>
                 </div>

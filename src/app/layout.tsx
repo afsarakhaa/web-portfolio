@@ -1,3 +1,4 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import FooterComp from "@/components/Footer/Footer";
@@ -18,10 +19,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/image/afsar_logo.png" />
       </head>
-      <body className="bg-gradient-to-r from-green-100 to-blue-100 flex flex-col min-h-screen">
+      <body className="bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 min-h-screen flex flex-col">
         <HeaderComp />
-        <main className="flex flex-grow justify-center items-center">{children}</main>
-        <FooterComp/>
+        <main className="flex-grow">{children}</main>
+        <FooterComp />
       </body>
     </html>
   );

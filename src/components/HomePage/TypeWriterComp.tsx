@@ -1,13 +1,15 @@
-import Typewriter from 'typewriter-effect';
-import { useState } from 'react';
+"use client"
+
+import Typewriter from "typewriter-effect"
+import { useState } from "react"
 
 export default function TypeWriterComp() {
     const [roles] = useState([
         "an IS student @ University of Indonesia",
         "a Web Dev & UX Design Enthusiast",
-        "",
-        "Also Professional Yapper 😎",
-    ]);
+        "a Professional Yapper 😎",
+        "someone who loves creating digital magic ✨",
+    ])
 
     return (
         <Typewriter
@@ -15,8 +17,9 @@ export default function TypeWriterComp() {
                 strings: roles,
                 autoStart: true,
                 loop: true,
-                deleteSpeed: 50,
+                deleteSpeed: 30,
+                delay: 80,
             }}
         />
-    );
+    )
 }
