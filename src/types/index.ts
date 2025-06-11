@@ -31,6 +31,7 @@ export interface Skill {
     name: string
     level: number
     color: string
+    category?: "Language" | "Framework" | "Design"
 }
 
 export interface Interest {

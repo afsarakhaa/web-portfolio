@@ -5,6 +5,8 @@ import { FiCode } from "react-icons/fi"
 import GlassCard from "@/components/ui/GlassCard"
 import { skills } from "@/data/skills"
 
+const categories = ["Language", "Framework", "Design"] as const
+
 export default function SkillsSection() {
     return (
         <GlassCard className="p-8" hover={false}>
@@ -12,30 +14,43 @@ export default function SkillsSection() {
                 <FiCode className="mr-3 text-blue-500" />
                 Skills & Expertise
             </h3>
-            <div className="space-y-4">
-                {skills.map((skill, index) => (
-                    <motion.div
-                        key={skill.name}
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.6, delay: index * 0.1 }}
-                        className="relative"
-                    >
-                        <div className="flex justify-between items-center mb-2">
-                            <span className="font-semibold text-gray-800">{skill.name}</span>
-                            <span className="text-sm text-gray-600">{skill.level}%</span>
+
+            {categories.map((category) => {
+                const filteredSkills = skills.filter(skill => skill.category === category)
+                if (filteredSkills.length === 0) return null
+
+                return (
+                    <div key={category} className="mb-8">
+                        <h4 className="text-lg font-semibold text-gray-700 mb-4 border-b border-gray-300 pb-1">
+                            {category}
+                        </h4>
+                        <div className="space-y-4">
+                            {filteredSkills.map((skill, index) => (
+                                <motion.div
+                                    key={skill.name}
+                                    initial={{ opacity: 0, x: -20 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                                    className="relative"
+                                >
+                                    <div className="flex justify-between items-center mb-2">
+                                        <span className="font-semibold text-gray-800">{skill.name}</span>
+                                        <span className="text-sm text-gray-600">{skill.level}%</span>
+                                    </div>
+                                    <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                                        <motion.div
+                                            initial={{ width: 0 }}
+                                            animate={{ width: `${skill.level}%` }}
+                                            transition={{ duration: 1, delay: index * 0.1 + 0.5 }}
+                                            className={`h-full rounded-full ${skill.color} shadow-sm`}
+                                        />
+                                    </div>
+                                </motion.div>
+                            ))}
                         </div>
-                        <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
-                            <motion.div
-                                initial={{ width: 0 }}
-                                animate={{ width: `${skill.level}%` }}
-                                transition={{ duration: 1, delay: index * 0.1 + 0.5 }}
-                                className={`h-full rounded-full ${skill.color} shadow-sm`}
-                            />
-                        </div>
-                    </motion.div>
-                ))}
-            </div>
+                    </div>
+                )
+            })}
         </GlassCard>
     )
 }
