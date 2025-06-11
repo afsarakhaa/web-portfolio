@@ -9,12 +9,20 @@ import SkillsSection from "./SkillsSection"
 import InterestsSection from "./InterestsSection"
 import FunFactsSection from "./FunFactsSection"
 import { PiHandWaving } from "react-icons/pi"
+import AwardsSection from "./AwardsSection"
+import ExperienceSection from "./ExperienceSection"
+import ResumeButton from "./ResumeButton"
 
 export default function AboutPage() {
     return (
         <section className="min-h-screen py-16">
             <div className="max-w-6xl mx-auto px-4">
                 <PageHeader title="About Me" subtitle="" />
+
+                {/* Resume/CV */}
+                <div className="mb-8">
+                    <ResumeButton />
+                </div>
 
                 {/* Main Content */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
@@ -41,7 +49,7 @@ export default function AboutPage() {
                                 <PiHandWaving className="mr-3 text-green-500 w-8 h-8" />
                                 Hello There!
                             </h3>
-                            <div className="text-gray-700 leading-relaxed space-y-4">
+                            <div className="text-gray-700 leading-relaxed space-y-4 text-justify">
                                 <p>
                                     Hi! I'm <span className="text-green-600 font-bold">Afsar Rakha Farrasandi</span>, an Information
                                     Systems student at the University of Indonesia who thrives at the intersection of{" "}
@@ -68,11 +76,31 @@ export default function AboutPage() {
                     </motion.div>
                 </div>
 
+                {/* Experience Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.5 }}
+                    className="mb-16"
+                >
+                    <ExperienceSection />
+                </motion.div>
+
+                {/* Awards Section */}
+                <motion.div
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    className="mb-16"
+                >
+                    <AwardsSection />
+                </motion.div>
+
                 {/* Call to Action */}
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: 0.6 }}
+                    transition={{ duration: 0.8, delay: 0.7 }}
                     className="text-center"
                 >
                     <GlassCard className="p-8 max-w-3xl mx-auto" hover={false}>

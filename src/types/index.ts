@@ -55,6 +55,28 @@ export interface ContactInfo {
     description: string
 }
 
+export interface Experience {
+    id: number
+    company: string
+    position: string
+    duration: string
+    location: string
+    description: string[]
+    technologies?: string[]
+    logo?: string
+    current?: boolean
+}
+
+export interface Award {
+    id: number
+    title: string
+    issuer: string
+    date: string
+    description: string
+    icon: string
+    category: string
+}
+
 // Under Construction, will develop really soon
 // export interface FormData {
 //     name: string
