@@ -5,9 +5,9 @@ import { useState } from "react"
 
 export default function TypeWriterComp() {
     const [roles] = useState([
-        "an IS student @ University of Indonesia",
-        "a Web Dev & UX Design Enthusiast",
-        "a Professional Yapper :')",
+        "an Information Systems student @ University of Indonesia",
+        "a Product & Software Engineer",
+        "a Natural-Born Yapper :')",
     ])
 
     return (

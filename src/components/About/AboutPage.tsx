@@ -51,21 +51,21 @@ export default function AboutPage() {
                             </h3>
                             <div className="text-gray-700 leading-relaxed space-y-4 text-justify">
                                 <p>
-                                    Hi! I'm <span className="text-green-600 font-bold">Afsar Rakha Farrasandi</span>, an Information
+                                    Hi! I'm <span className="text-green-600 font-bold">Afsar </span>, a final-year Information
                                     Systems student at the University of Indonesia who thrives at the intersection of{" "}
                                     <span className="text-gray-800 font-semibold">technology</span>,
                                     <span className="text-gray-800 font-semibold"> design</span>, and
                                     <span className="text-gray-800 font-semibold"> user experiences</span>.
                                 </p>
                                 <p>
+                                    With experience across <span className="text-green-600 font-semibold">Product</span> and <span className="text-green-600 font-semibold">Software Engineering</span>,
+                                    I’ve contributed to real-world projects including ERP platforms, internal tools, and product prototypes.
+                                    I enjoy solving complex problems through collaboration, clear thinking, and well-crafted systems.
+                                </p>
+                                <p>
                                     What makes me unique? Well, I'm a <span className="text-pink-600 font-bold">natural-born yapper</span>{" "}
                                     🗣️ who can turn any conversation into an engaging discussion! I love creating interactive digital
                                     experiences, building web applications, and most importantly - having fun while doing it.
-                                </p>
-                                <p>
-                                    When I'm not coding or designing, I’m probably lifting at the gym, strumming my guitar, creating study cases about
-                                    random life dilemmas, or probably yapping about hot takes from social media. I believe that the best
-                                    projects come from combining technical skills with creativity and a good sense of humor! 🎭
                                 </p>
                             </div>
                         </GlassCard>

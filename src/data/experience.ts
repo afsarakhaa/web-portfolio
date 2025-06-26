@@ -45,7 +45,7 @@ export const experiences: Experience[] = [
     },
     {
         id: 4,
-        company: "MAGNIFICOMPS",
+        company: "Magnificomps",
         position: "Project Officer",
         duration: "Aug 2023 - Dec 2023",
         location: "Depok, West Java, Indonesia",

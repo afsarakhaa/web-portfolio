@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { FiBriefcase, FiCalendar, FiMapPin, FiCheckCircle } from "react-icons/fi"
+import { FiBriefcase, FiCalendar, FiMapPin, FiCheckCircle, FiStar } from "react-icons/fi"
 import { experiences } from "@/data/experience"
 import GlassCard from "@/components/ui/GlassCard"
 
@@ -29,7 +29,11 @@ export default function ExperienceSection() {
                         >
                             {/* Timeline dot */}
                             <div className="absolute left-0 md:left-6 top-0 w-9 h-9 rounded-full bg-white border-2 border-green-400 flex items-center justify-center ml-0 md:-ml-4 shadow-lg">
-                                <span className="text-lg">{exp.current ? "🌟" : "💼"}</span>
+                                {exp.current ? (
+                                    <FiStar className="text-lg text-yellow-500" strokeWidth={2.5} />
+                                ) : (
+                                    <FiBriefcase className="text-lg text-green-700" strokeWidth={2.5} />
+                                )}
                             </div>
 
                             <div className="bg-white/50 backdrop-blur-sm rounded-xl p-5 border border-gray-100 shadow-md hover:shadow-lg transition-shadow duration-300">

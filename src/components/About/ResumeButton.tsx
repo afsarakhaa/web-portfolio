@@ -12,7 +12,7 @@ export default function ResumeButton() {
             className="flex justify-center"
         >
             <a
-                href="https://drive.google.com/file/d/1uHtAeF8HpaMI1_LIj-y7z6VeuVn0lBIi/view?usp=sharing"
+                href="https://drive.google.com/file/d/1-ZgjuBYk33nfPs3z44Im54LgnEkpoPyb/view?usp=share_link"
                 download="Afsar_Rakha_Resume.pdf"
                 className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-green-500 to-blue-500 text-white font-bold rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
             >

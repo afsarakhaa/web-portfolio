@@ -2,6 +2,11 @@ import type { Interest } from "@/types"
 
 export const interests: Interest[] = [
     {
+        icon: "💻",
+        title: "Coding",
+        description: "Passionate about creating digital solutions and learning new technologies",
+    },
+    {
         icon: "🎸",
         title: "Music",
         description: "Really into music, from casual singing to playing guitar.",
@@ -10,11 +15,6 @@ export const interests: Interest[] = [
         icon: "🗣️",
         title: "Yapping",
         description: "A yapper who can talk about anything for hours, from silly stuff to deep thoughts",
-    },
-    {
-        icon: "💻",
-        title: "Coding",
-        description: "Passionate about creating digital solutions and learning new technologies",
     },
     { 
         icon: "🎨", 

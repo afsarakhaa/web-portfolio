@@ -16,9 +16,9 @@ export default function ProfileCard() {
                     className="w-48 h-48 mx-auto rounded-full overflow-hidden border-4 border-green-400 shadow-lg"
                 >
                     <img
-                        src="image/afsar_photo.png"
+                        src="image/afsar_photo_2.png"
                         alt="Afsar Rakha Farrasandi"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover scale-125"
                     />
                 </motion.div>
                 <div className="absolute -bottom-2 -right-2 bg-green-500 text-white p-2 rounded-full">
