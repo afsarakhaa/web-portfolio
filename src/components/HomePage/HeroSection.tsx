@@ -38,11 +38,20 @@ export default function HeroSection() {
                         </span>
                     </div>
                     <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-                        who loves{" "}
+                        {/* Under Construction */}
+                        {/* who loves{" "}
                         <span className="line-through p-1 md:p-2 border text-black font-medium bg-gray-100 rounded-lg md:rounded-xl mx-1">
                             You 🤭
+                        </span>{" "} */}
+                        who thrives on turning ideas into{" "}
+                        <span className="inline-flex items-center gap-1.5 font-semibold text-green-800 bg-green-100/70 border border-green-200/80 rounded-lg px-2 py-0.5 mx-1">
+                            intuitive
                         </span>{" "}
-                        creating impactful digital experiences.
+                        and{" "}
+                        <span className="inline-flex items-center gap-1.5 font-semibold text-green-800 bg-green-100/70 border border-green-200/80 rounded-lg px-2 py-0.5 mx-1">
+                            user-centered
+                        </span>{" "}
+                        digital products.
                     </p>
                 </div>
             </motion.div>
